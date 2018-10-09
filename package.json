@@ -1,9 +1,11 @@
 {
     "name": "project-helix",
     "displayName": "Project Helix",
-    "description": "Project Helix IntelliSense, debugging and more",
+    "description": "Project Helix IntelliSense, syntax coloring, debugging and more",
     "version": "0.0.1",
     "publisher": "Adobe",
+    "license": "Apache-2.0",
+    "repository": "git@github.com:adobe/vscode-helix.git",
     "engines": {
         "vscode": "^1.27.0"
     },
@@ -24,13 +26,26 @@
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
+        "lint": "eslint .",
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "eslint": "^4.11.0",
         "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^2.2.42",
+        "ajv": "^6.5.3",
+        "codecov": "^3.1.0",
+        "eslint": "^5.4.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-header": "^2.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.1",
+        "eslint-plugin-react": "^7.11.0",
+        "istanbul": "^1.1.0-alpha.1",
+        "mocha": "^5.2.0",
+        "mocha-junit-reporter": "^1.18.0",
+        "nodemon": "^1.17.2",
+        "nyc": "^13.0.1",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21"
     }
 }
