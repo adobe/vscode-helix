@@ -22,7 +22,18 @@
                 "command": "extension.sayHello",
                 "title": "Hello World"
             }
-        ]
+        ],
+        "languages": [{
+            "id": "htl",
+            "aliases": ["HTML Template Language (HTL)", "htl"],
+            "extensions": [".htl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "htl",
+            "scopeName": "text.html.htl",
+            "path": "./syntaxes/htl.tmLanguage.json"
+        }]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",

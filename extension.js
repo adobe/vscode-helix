@@ -12,7 +12,7 @@
 
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// eslint-disable-next-line
+// eslint-disable-next-line import/no-unresolved
 const vscode = require('vscode');
 
 // this method is called when your extension is activated
@@ -20,7 +20,7 @@ const vscode = require('vscode');
 function activate(context) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  // eslint-disable-next-line
+  // eslint-disable-next-line no-console
   console.log('Congratulations, your extension "project-helix" is now active!');
 
   // The command has been defined in the package.json file
