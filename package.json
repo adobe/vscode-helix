@@ -13,14 +13,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.someHelixTask"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.someHelixTask",
+                "title": "Some Helix Task..."
             }
         ],
         "languages": [{
