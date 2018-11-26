@@ -16,6 +16,7 @@ Project Helix extension for VS Code.
 ToDo:
 
 * Code completion for `data-sly-*` attributes.
+* Intellisense for `data-sly-*` attributes.
 * [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md) linter integrated in editor (similar to ESLint)
 * ...
 
