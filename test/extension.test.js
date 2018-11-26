@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
-/* global suite, test */
+/* eslint-env mocha */
 
 'use strict';
 
@@ -22,9 +22,9 @@ const assert = require('assert');
 // const myExtension = require('../extension');
 
 // Defines a Mocha test suite to group tests of similar kind together
-suite('Extension Tests', () => {
+describe('Extension Tests', () => {
   // Defines a Mocha unit test
-  test('Something 1', () => {
+  it('Something 1', () => {
     assert.equal(-1, [1, 2, 3].indexOf(5));
     assert.equal(-1, [1, 2, 3].indexOf(0));
   });
