@@ -2,7 +2,12 @@
 
 Project Helix extension for VS Code.
 
-This is the README for your extension "project-helix". After writing up a brief description, we recommend including the following sections.
+## Status
+[![codecov](https://img.shields.io/codecov/c/github/adobe/vscode-helix.svg)](https://codecov.io/gh/adobe/vscode-helix)
+[![CircleCI](https://img.shields.io/circleci/project/github/adobe/vscode-helix.svg)](https://circleci.com/gh/adobe/vscode-helix)
+[![GitHub license](https://img.shields.io/github/license/adobe/vscode-helix.svg)](https://github.com/adobe/vscode-helix/blob/master/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/adobe/vscode-helix.svg)](https://github.com/adobe/vscode-helix/issues)
+[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/vscode-helix.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/vscode-helix)
 
 ## Features
 
@@ -18,42 +23,9 @@ For example if there is an image subfolder under your extension project workspac
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
-## Contributing
-
-If you have suggestions for how the helix bot could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## Licensing
 

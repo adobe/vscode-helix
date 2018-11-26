@@ -9,14 +9,11 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-/* global suite, test */
 
-//
-// Note: This example test is leveraging the Mocha test framework.
-// Please refer to their documentation on https://mochajs.org/ for help.
-//
+/* eslint-env mocha */
 
-// The module 'assert' provides assertion methods from node
+'use strict';
+
 const assert = require('assert');
 
 // You can import and use all API from the 'vscode' module

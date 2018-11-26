@@ -1,4 +1,10 @@
 node_modules
 .vscode-test/
 *.vsix
+coverage
+.nyc_output/
+junit
+tmp
+logs
 .DS_Store
+test-results.xml
