@@ -11,22 +11,19 @@ Project Helix extension for VS Code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* Syntax Coloring for [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md)
 
-For example if there is an image subfolder under your extension project workspace:
+ToDo:
 
-\!\[feature X\]\(images/feature-x.png\)
+* Code completion for `data-sly-*` attributes.
+* [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md) linter integrated in editor (similar to ESLint)
+* ...
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Development
 
-## Requirements
+To try the extension:
+* Press `F5` to open a new window with the extension loaded.
+* Open an `.htl` file in the editor.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+See [Extending Visual Studio Code](https://code.visualstudio.com/docs/extensions/overview) for more information on writing VS Code extensions.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Licensing
-
-This project is licensed under the Apache V2 License. See [LICENSE](LICENSE.txt) for more information.

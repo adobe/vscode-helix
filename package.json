@@ -17,12 +17,6 @@
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "extension.someHelixTask",
-                "title": "Some Helix Task..."
-            }
-        ],
         "languages": [{
             "id": "htl",
             "aliases": ["HTML Template Language (HTL)", "htl"],

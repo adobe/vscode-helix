@@ -11,31 +11,16 @@
  */
 
 // eslint-disable-next-line import/no-unresolved
-const vscode = require('vscode');
+const vscode = require('vscode'); // eslint-disable-line no-unused-vars
 
 // called when extension is activated
-function activate(context) {
-  // register commands
-  const disposable = vscode.commands.registerCommand('extension.someHelixTask', () => {
-    const editor = vscode.window.activeTextEditor;
-    if (!editor) {
-      return; // No open text editor
-    }
-
-    const { selection } = editor;
-    const text = editor.document.getText(selection);
-
-    // Display a message box to the user
-    vscode.window.showInformationMessage(`Selected characters: ${text.length}`);
-    //vscode.window.showInformationMessage('Done Some Helix Task!');
-  });
-
-  context.subscriptions.push(disposable);
+function activate(context) { // eslint-disable-line no-unused-vars
+  // TODO: register commands, etc
 }
 exports.activate = activate;
 
 // called when extension is deactivated
 function deactivate() {
-  // clean-up
+  // TODO: clean-up
 }
 exports.deactivate = deactivate;
