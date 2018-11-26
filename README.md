@@ -23,6 +23,7 @@ ToDo:
 ## Development
 
 To try the extension:
+* Open this project in VS Code.
 * Press `F5` to open a new window with the extension loaded.
 * Open an `.htl` file in the editor.
 
