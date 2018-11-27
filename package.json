@@ -1,56 +1,68 @@
 {
-    "name": "project-helix",
-    "displayName": "Project Helix",
-    "description": "Project Helix IntelliSense, syntax coloring, debugging and more",
-    "version": "0.0.1",
-    "publisher": "Adobe",
-    "license": "Apache-2.0",
-    "repository": "git@github.com:adobe/vscode-helix.git",
-    "engines": {
-        "vscode": "^1.27.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.someHelixTask"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "languages": [{
-            "id": "htl",
-            "aliases": ["HTML Template Language (HTL)", "htl"],
-            "extensions": [".htl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "htl",
-            "scopeName": "text.html.htl",
-            "path": "./syntaxes/htl.tmLanguage.json"
-        }]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "lint": "eslint .",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42",
-        "ajv": "^6.5.3",
-        "codecov": "^3.1.0",
-        "eslint": "^5.4.0",
-        "eslint-config-airbnb": "^17.1.0",
-        "eslint-plugin-header": "^2.0.0",
-        "eslint-plugin-import": "^2.14.0",
-        "eslint-plugin-jsx-a11y": "^6.1.1",
-        "eslint-plugin-react": "^7.11.0",
-        "istanbul": "^1.1.0-alpha.1",
-        "mocha": "^5.2.0",
-        "mocha-junit-reporter": "^1.18.0",
-        "nodemon": "^1.17.2",
-        "nyc": "^13.0.1",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21"
-    }
+  "name": "project-helix",
+  "displayName": "Project Helix",
+  "description": "Project Helix IntelliSense, syntax coloring, debugging and more",
+  "version": "0.0.1",
+  "publisher": "Adobe",
+  "license": "Apache-2.0",
+  "repository": "git@github.com:adobe/vscode-helix.git",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.someHelixTask"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "languages": [{
+      "id": "htl",
+      "aliases": [
+        "HTML Template Language (HTL)",
+        "htl"
+      ],
+      "extensions": [
+        ".htl"
+      ],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "htl",
+      "scopeName": "text.html.htl",
+      "path": "./syntaxes/htl.tmLanguage.json"
+    }]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test-vscode": "node ./node_modules/vscode/bin/test",
+    "test": "nyc mocha",
+    "lint": "./node_modules/.bin/eslint .",
+    "junit": "mocha --exit -R mocha-junit-reporter",
+    "preversion": "npm run junit",
+    "postversion": "git push origin master --follow-tags",
+    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "ajv": "^6.5.3",
+    "codecov": "^3.1.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-header": "^2.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "junit-report-builder": "^1.3.1",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.18.0",
+    "mocha-parallel-tests": "^2.0.3",
+    "nodemon": "^1.18.7",
+    "nyc": "^13.0.1",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.22"
+  }
 }
