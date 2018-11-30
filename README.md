@@ -31,4 +31,3 @@ To try the extension:
 * Open an `.htl` file in the editor.
 
 See [Extending Visual Studio Code](https://code.visualstudio.com/docs/extensions/overview) for more information on writing VS Code extensions.
-
