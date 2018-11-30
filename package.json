@@ -56,8 +56,8 @@
     "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^8.10.25",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.10",
     "ajv": "^6.5.3",
     "codecov": "^3.1.0",
     "eslint": "^5.4.0",
@@ -73,7 +73,7 @@
     "mocha-parallel-tests": "^2.0.3",
     "nodemon": "^1.18.7",
     "nyc": "^13.0.1",
-    "typescript": "^2.6.1",
+    "typescript": "^3.1.6",
     "vscode": "^1.1.22"
   }
 }
