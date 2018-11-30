@@ -16,11 +16,17 @@ Project Helix extension for VS Code.
 
 **ToDo:**
 
-* Extension tests
+* Extension tests (syntax coloring, etc.)
+* Inject configuration to enable Emmet for HTL
 * Code completion for `data-sly-*` attributes.
 * Intellisense for `data-sly-*` attributes.
 * [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md) linter integrated in editor (similar to ESLint)
-* Specific syntax colouring for [HTL expressions](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#1-expression-language-syntax-and-semantics) (`javascript` syntax colouring is currently applied) 
+* ...
+
+**Nice to have:**
+
+* Distinct syntax coloring for [HTL expressions](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#1-expression-language-syntax-and-semantics) (`javascript` syntax coloring is currently applied)
+* Theme with distinct coloring of HTL language elements (`sly` tag, `data-sly-*` attributes, expressions)
 * ...
 
 ## Development
