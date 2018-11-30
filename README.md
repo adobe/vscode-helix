@@ -16,10 +16,11 @@ Project Helix extension for VS Code.
 
 **ToDo:**
 
+* Extension tests
 * Code completion for `data-sly-*` attributes.
 * Intellisense for `data-sly-*` attributes.
 * [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md) linter integrated in editor (similar to ESLint)
-* specific syntax colouring for [HTL expressions](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#1-expression-language-syntax-and-semantics) (`javascript` syntax colouring is currently applied) 
+* Specific syntax colouring for [HTL expressions](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#1-expression-language-syntax-and-semantics) (`javascript` syntax colouring is currently applied) 
 * ...
 
 ## Development
