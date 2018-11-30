@@ -13,25 +13,36 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.someHelixTask"
   ],
   "main": "./extension",
   "contributes": {
     "languages": [{
       "id": "htl",
       "aliases": [
+        "HTL",
         "HTML Template Language (HTL)",
         "htl"
       ],
       "extensions": [
-        ".htl"
+        ".htl",
+        ".htl.html"
       ],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "htl",
       "scopeName": "text.html.htl",
-      "path": "./syntaxes/htl.tmLanguage.json"
+      "path": "./syntaxes/htl.tmLanguage.json",
+      "injectTo": [
+        "text.html.derived",
+        "text.html.basic",
+        "text.html"
+      ],
+      "embeddedLanguages": {
+        "text.html": "html",
+        "source.css": "css",
+        "source.js": "javascript"
+      }
     }]
   },
   "scripts": {

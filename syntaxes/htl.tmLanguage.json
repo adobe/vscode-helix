@@ -7,7 +7,33 @@
     "htl.html",
     "sly"
   ],
-  "uuid": "156fba19-535d-4066-9a14-4de9be52891d",
+	"injections": {
+    "R:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {
+			"comment": "Uses R: to ensure this matches after any other injections.",
+			"patterns": [
+				{
+					"match": "<",
+					"name": "invalid.illegal.bad-angle-bracket.html"
+				}
+			]
+		},
+    "string.quoted.double.html": {
+      "comment": "apply HTL expression patterns on attribute values",
+			"patterns": [
+        {
+          "include": "#expression"
+        }
+			]
+    },
+		"text.html - (comment.block)": {
+      "comment": "apply HTL expression patterns on entity content",
+			"patterns": [
+        {
+          "include": "#expression"
+        }
+			]
+    }
+	},
   "repository": {
     "expression": {
       "comment": "HTL expression ${ }",
@@ -33,10 +59,7 @@
   },
   "patterns": [
     {
-      "include": "#expression"
-    },
-    {
-      "include": "text.html.basic"
+      "include": "text.html.derivative"
     }
   ]
 }

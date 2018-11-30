@@ -14,8 +14,7 @@
 		{ "open": "(", "close": ")" },
 		{ "open": "'", "close": "'" },
 		{ "open": "\"", "close": "\"" },
-        { "open": "<!--", "close": "-->", "notIn": [ "comment", "string" ]},
-		{ "open": "${", "close": "}" }
+    { "open": "<!--", "close": "-->", "notIn": [ "comment", "string" ]}
 	],
 	"surroundingPairs": [
 		{ "open": "'", "close": "'" },
@@ -30,5 +29,5 @@
 			"start": "^\\s*<!--\\s*#region\\b.*-->",
 			"end": "^\\s*<!--\\s*#endregion\\b.*-->"
 		}
-  }
+	}
 }
