@@ -20,6 +20,7 @@ Project Helix extension for VS Code.
 * Inject configuration to enable Emmet for HTL
 * Code completion for `data-sly-*` attributes.
 * Intellisense for `data-sly-*` attributes.
+* Intellisense for `*.pre.js` files
 * [HTL](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md) linter integrated in editor (similar to ESLint)
 * ...
 
