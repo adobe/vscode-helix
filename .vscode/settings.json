@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "editor.tabSize": 2,
-  "python.pythonPath": "/usr/local/bin/python3"
+  "python.pythonPath": "/usr/local/bin/python3",
+  "eslint.enable": true
 }
