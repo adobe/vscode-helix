@@ -11,16 +11,31 @@
  */
 
 // eslint-disable-next-line import/no-unresolved
-const vscode = require('vscode'); // eslint-disable-line no-unused-vars
+const vscode = require('vscode');
+
+const { Documents } = require('./documents.js');
+const { ExpressionCompletionItemProvider } = require('./suggest.js');
+
+const HTL_SCRIPT_MODE = { scheme: 'file', language: 'htl' };
 
 // called when extension is activated
-function activate(context) { // eslint-disable-line no-unused-vars
-  // TODO: register commands, etc
+function activate(context) {
+  const documents = new Documents();
+  context.subscriptions.push(documents);
+  context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(documents.open));
+  context.subscriptions.push(vscode.workspace.onDidCloseTextDocument(documents.close));
+  documents.reload();
+
+  const provider = new ExpressionCompletionItemProvider(context.globalState, documents);
+  context.subscriptions.push(provider);
+  context.subscriptions.push(vscode.languages.registerCompletionItemProvider(HTL_SCRIPT_MODE, provider, '.', '{'));
 }
+
 exports.activate = activate;
 
 // called when extension is deactivated
 function deactivate() {
   // TODO: clean-up
 }
+
 exports.deactivate = deactivate;
