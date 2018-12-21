@@ -16,7 +16,7 @@ Project Helix extension for VS Code.
 
 **ToDo:**
 
-* Extension tests (syntax coloring, etc.) (use tm display)
+* Extension tests (syntax coloring, etc.)
 * Inject configuration to enable Emmet for HTL
 * Code completion for `data-sly-*` attributes.
 * Intellisense for `data-sly-*` attributes.
