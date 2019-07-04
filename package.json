@@ -58,7 +58,9 @@
     "junit": "mocha --exit -R mocha-junit-reporter",
     "preversion": "npm run junit",
     "postversion": "git push origin master --follow-tags",
-    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version"
+    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
@@ -83,6 +85,8 @@
   "dependencies": {
     "@adobe/helix-pipeline": "^3.0.0",
     "ajv": "^6.6.1",
-    "fs-extra": "^8.0.0"
-  }
+    "fs-extra": "^8.0.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
