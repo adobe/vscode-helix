@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
+/* eslint-disable max-classes-per-file */
 // eslint-disable-next-line import/no-unresolved
 const vscode = require('vscode'); // eslint-disable-line no-unused-vars
 const { Registry } = require('./registry.js');
@@ -33,7 +34,7 @@ class Document {
   }
 
   dispose() {
-    this.subscriptions.forEach(s => s.dispose());
+    this.subscriptions.forEach((s) => s.dispose());
   }
 
   reparseTokens(r) {
@@ -126,14 +127,14 @@ class Documents {
   }
 
   reload() {
-    Array.from(this.docs.values()).forEach(doc => doc.dispose);
+    Array.from(this.docs.values()).forEach((doc) => doc.dispose);
     this.docs.clear();
 
-    vscode.workspace.textDocuments.forEach(vsdoc => this.open(vsdoc));
+    vscode.workspace.textDocuments.forEach((vsdoc) => this.open(vsdoc));
   }
 
   dispose() {
-    Array.from(this.docs.values()).forEach(doc => doc.dispose());
+    Array.from(this.docs.values()).forEach((doc) => doc.dispose());
     this.docs.clear();
   }
 
