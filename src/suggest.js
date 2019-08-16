@@ -31,7 +31,7 @@ class ExpressionCompletionItemProvider {
    */
   loadSchemas() {
     const schemadir = '@adobe/helix-pipeline/src/schemas';
-    const ajv = new Ajv(Object.assign({ allErrors: true, verbose: true }, {}));
+    const ajv = new Ajv({ allErrors: true, verbose: true });
     // compromise: in order to avoid async code here
     // (which would complicate pipeline implementation considerably)
     // we're using static file names and synchronous reads/requires (#134)

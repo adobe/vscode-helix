@@ -75,7 +75,7 @@ class Registry {
     return new Promise((resolve, reject) => {
       this.registry.loadGrammar(scopeName).then((g) => {
         resolve(this.grammars[scopeName] = g);
-      }).catch(error => reject(error));
+      }).catch((error) => reject(error));
     });
   }
 }
