@@ -82,7 +82,7 @@
     "vscode": "^1.1.36"
   },
   "dependencies": {
-    "@adobe/helix-pipeline": "^4.1.0",
+    "@adobe/helix-pipeline": "^5.3.0",
     "ajv": "^6.10.2",
     "fs-extra": "^8.0.0",
     "snyk": "^1.217.0"
