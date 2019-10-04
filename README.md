@@ -36,6 +36,6 @@ To try the extension:
 
 * Open this project in VS Code.
 * Press `F5` to open a new window with the extension loaded.
-* Open an `.htl` file in the editor.
+* Open a `.htl` file in the editor.
 
 See [Extending Visual Studio Code](https://code.visualstudio.com/docs/extensions/overview) for more information on writing VS Code extensions.
