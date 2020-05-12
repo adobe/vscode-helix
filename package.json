@@ -5,7 +5,10 @@
   "version": "0.0.1",
   "publisher": "Adobe",
   "license": "Apache-2.0",
-  "repository": "git@github.com:adobe/vscode-helix.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/vscode-helix.git"
+  },
   "engines": {
     "vscode": "^1.27.0"
   },
@@ -87,5 +90,9 @@
     "fs-extra": "^8.0.0",
     "snyk": "^1.217.0"
   },
-  "snyk": true
+  "snyk": true,
+  "bugs": {
+    "url": "https://github.com/adobe/vscode-helix/issues"
+  },
+  "homepage": "https://github.com/adobe/vscode-helix#readme"
 }
