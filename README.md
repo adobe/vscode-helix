@@ -5,7 +5,7 @@ Project Helix extension for VS Code.
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/vscode-helix.svg)](https://codecov.io/gh/adobe/vscode-helix)
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/vscode-helix.svg)](https://circleci.com/gh/adobe/vscode-helix)
-[![GitHub license](https://img.shields.io/github/license/adobe/vscode-helix.svg)](https://github.com/adobe/vscode-helix/blob/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/adobe/vscode-helix.svg)](https://github.com/adobe/vscode-helix/blob/main/LICENSE.txt)
 [![GitHub issues](https://img.shields.io/github/issues/adobe/vscode-helix.svg)](https://github.com/adobe/vscode-helix/issues)
 
 [![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/vscode-helix.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/vscode-helix)
