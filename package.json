@@ -57,7 +57,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test-vscode": "node ./node_modules/vscode/bin/test",
     "test": "nyc --reporter=text --reporter=lcov --check-coverage mocha",
-    "test-ci": "nyc --reporter=text --reporter=lcov --check-coverage mocha --reporter xunit --reporter-options output=./junit/test-results.xml && codecov",
+    "test-ci": "nyc mocha --reporter=text --reporter=lcov --check-coverage --reporter xunit --reporter-options output=./junit/test-results.xml && codecov",
     "lint": "./node_modules/.bin/eslint .",
     "junit": "mocha --exit -R mocha-junit-reporter",
     "preversion": "npm run junit",
